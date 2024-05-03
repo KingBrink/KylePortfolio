@@ -15,7 +15,7 @@
     --bgHeaderFooter: grey;
     --awesome: green;
     --bgCAbout: orange;
-    --mainBox-Shadow:;
+    --mainBox-Shadow:bue;
     --card-box-shadow:;
     --text-shadow:;
     --mainBg:;
@@ -47,7 +47,3 @@
     initial-value: 0%;
 }
 
-img {
-    width: 300px;
-    height: 300px;
-}
