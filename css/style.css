@@ -66,3 +66,24 @@ img[alt='logo'] {
     object-position: center;
 }
 
+/*Grid layout */
+:is(body) {
+    display: grid;
+    text-align: center;
+}
+
+/* create three rows */
+:is(body) {
+    grid-template-rows: auto 
+    minmax(100%,100dvh) auto;
+}
+
+/*Navbar*/
+a {
+    transition: all 5s;
+    
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
