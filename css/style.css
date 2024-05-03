@@ -1,26 +1,28 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
+::-webkit-scrollbar {
+    display: none;
+}
 
-
+/* Custom variables */
 :root {
-    --primary: black;
+    --primary: rgb(0, 0, 0);
     --secondary: white;
-    --alternative: blue;
-    --bgHeaderFooter: grey;
-    --awesome: green;
-    --bgCAbout: orange;
-    --mainBox-Shadow:bue;
-    --card-box-shadow:;
-    --text-shadow:;
-    --mainBg:;
-    --bgImg:
-
+    --alternative: hsla(100, 13%, 28%, 0.7);
+    --bgHeaderFooter: rgb(62, 101, 92);
+    --awesome: darkolivegreen;
+    --bgCAbout: #56744e;
+    --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(105, 96, 96, 0.75);
+    --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 99, 0.9);
+    --text-shadow: .3rem .3rem .4rem rgba(78, 107, 91, 0.5);
+    --mainBg: hsla(145, 83%, 20%, 0.39);
+    --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
 }
 
 @property --top-left {
@@ -30,7 +32,7 @@
 }
 
 @property --top-right {
-    syntax: "<percentage";
+    syntax: "<percentage>";
     inherits: false;
     initial-value: 50%;
 }
@@ -45,5 +47,22 @@
     syntax: "<percentage>";
     inherits: false;
     initial-value: 0%;
+}
+
+/* Navbar & footer */
+:is(.navbar, footer) {
+    background-color: var(--bgHeaderFooter);
+}
+
+/* Navbar */
+:is(.nav-link) {
+    color: var(--secondary);
+}
+
+img[alt='logo'] {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
 
