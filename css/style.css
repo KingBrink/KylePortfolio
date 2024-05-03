@@ -15,13 +15,13 @@
     --primary: rgb(0, 0, 0);
     --secondary: white;
     --alternative: hsla(100, 13%, 28%, 0.7);
-    --bgHeaderFooter: rgb(36, 214, 234);
-    --awesome: rgb(27, 235, 228);
-    --bgCAbout: #50ebfd;
+    --bgHeaderFooter: rgb(62, 101, 92);
+    --awesome: darkolivegreen;
+    --bgCAbout: #56744e;
     --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(105, 96, 96, 0.75);
     --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 99, 0.9);
     --text-shadow: .3rem .3rem .4rem rgba(78, 107, 91, 0.5);
-    --mainBg: hsla(173, 94%, 61%, 0.39);
+    --mainBg: hsla(145, 83%, 20%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
 }
 
@@ -55,6 +55,15 @@
 }
 
 /* Navbar */
+a {
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
+
 :is(.nav-link) {
     color: var(--secondary);
 }
@@ -66,24 +75,15 @@ img[alt='logo'] {
     object-position: center;
 }
 
-/*Grid layout */
+/* Grid layout*/
 :is(body) {
     display: grid;
     text-align: center;
 }
 
-/* create three rows */
+/* Create three rows */
 :is(body) {
-    grid-template-rows: auto 
-    minmax(100%,100dvh) auto;
+    grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
 
-/*Navbar*/
-a {
-    transition: all 5s;
-    
-    &:hover {
-        transform: scale(1.2);
-        text-decoration: underline;
-    }
-}
+/* Footer */
