@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+
+:root {
+    --primary: black;
+    --secondary: white;
+    --alternative: blue;
+    --bgHeaderFooter: grey;
+    
+}
+
+@property --top-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --top-right {
+    syntax: "<percentage";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --bottom-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --bottom-right {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
